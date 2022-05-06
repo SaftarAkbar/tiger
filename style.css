@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header .wallet {
+  width: 130px;
+  height: 35px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+}
+
+header .wallet:hover {
+  background-color: black;
+  transition: 0.6s;
+}
+header.sticky .wallet {
+  border: 1px solid black;
+  color: black;
+}
+header.sticky .wallet:hover {
+  background-color: black;
+  color: #fff;
+  transition: 1s;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+header .Logo {
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header .Logo img{
+  width: 50%;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+header .socials li {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+header .socials li:hover {
+  color: orange;
+}
+header.sticky .socials li {
+  color: black;
+}
+
+header.sticky .socials li:hover {
+  color: orange;
+}
+header ul li a:hover {
+  color: black;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(/images/download\ \(2\).jfif);
+}
+
+.banner p {
+  position: absolute;
+  color: white;
+  top: 35%;
+  left: 7%;
+  font-weight: 800;
+  font-size: 100px;
+}
+.banner span {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 30%;
+  font-weight: 600;
+  font-size: 60px;
+}
+header button {
+  font-size: 1em;
+  text-decoration: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 6px;
+  border: 1px #fff;
+  cursor: pointer;
+}
+header button:hover {
+  transition: 1s;
+  background-color: rgba(46, 45, 45, 0.762);
+}
+header.sticky .Logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+header.sticky ul li a:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: #000;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.nft-part {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  margin: 60px 0;
+}
+
+.nft-part .left-image img {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+}
+
+.nft-part .right-thumbnail {
+  width: 600px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.nft-part .right-thumbnail img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+.answers {
+  width: 400px;
+  background-color: black;
+  padding: 10px;
+}
+
+.answers p {
+  margin: 5px;
+  letter-spacing: 2px;
+}
+
+.question p {
+  font-size: 140px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin: 20px 40px;
+}
+
+.question span {
+  color: orange;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.video {
+  height: 100vh;
+  background-color: #000;
+}
+.video .boxofvideo {
+  margin: 110px 259px;
+  width: 1000px;
+  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.481);
+}
+
+.right-thumbnail .box-rarity {
+  height: 170px;
+  width: 160px;
+  text-align: center;
+  display: inline-block;
+}
+
+.banner .play-button {
+  position: absolute;
+  top: 38%;
+  left: 65%;
+  height: 60px;
+  width: 160px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #000;
+  font-size: large;
+  font-weight: 700;
+}
+
+.project {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.project img {
+  height: 800px;
+  width: 1200px;
+  margin-left: 150px;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  margin-top: 20px;
+}
+
+.project h1 {
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.566);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project .texts {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: white;
+  font: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 1055px;
+  height: 450px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(46, 45, 45, 0.762);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+
+.team-leaders {
+  margin-top: 50px;
+  margin: auto;
+  padding: 10px 70px 0 70px;
+  width: 1000px;
+  background-color: rgba(10, 10, 10, 0.336);
+  border: 2px solid whitesmoke;
+  box-shadow: 0px 0px 80px 40px rgb(46 45 45 / 76%);
+}
+.team {
+  margin: 40px;
+}
+.team-leaders .box-team {
+  display: inline-block;
+  margin: 10px 100px 10px 100px;
+}
+.team-leaders img {
+  border-radius: 5px;
+}
+.team-leaders h1 {
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-leaders p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(185, 182, 182);
+  margin: 5px 0;
+}
+
+.team > h1 {
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.566);
+}
+
+.roadmap {
+  margin: 10% 0;
+}
+.roadmap .boxformap {
+  margin: 4% 10%;
+  border: 2px solid whitesmoke;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 80px 40px rgb(46 45 45 / 76%);
+}
+
+.roadmap .boxformap p, pre{
+  color: orange;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.roadmap .boxformap h1{
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+}
+.roadmap > h1 {
+  color: aliceblue;
+  font-size: 7rem;
+  text-align: center;
+}
+.roadmap .boxformap pre {
+  margin-top: 1%;
+}
+
+.roadmap .boxformap .underline {
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+.underline:hover::before {
+  width: 100%;
+}
+
+.faq {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.faq > h1 {
+  text-align: center;
+  font-size: 7rem;
+  color: whitesmoke;
+}
+.faq .faq-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.faq .faq-box .faq-question {
+  position: relative;
+  padding: 10px;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+}
+.faq .faq-box .faq-question::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.faq .faq-box .faq-answer {
+  position: relative;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.faq .faq-box.active .faq-answer {
+  height: 100%;
+  padding: 10px;
+}
+
+.faq .faq-box.active .faq-question::before {
+  content: "-";
+}
+
+footer {
+  background-image: url(/images/Clouds-01.png);
+  height: 50vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+footer img{
+  display:inline-block;
+  width: 400px;
+  height: 200px;
+
+}
+footer > p {
+  font-size: 2rem;
+  color: black;
+  margin: auto;
+}
+
+footer > .social {
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+  justify-content: center;
+}
+footer > .social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer > .social ul li {
+  margin: 20px;
+}
+
+footer > .social ul li:hover {
+  color: orange;
+}
+
+.container {
+  background-color: rgba(26, 24, 24, 0.459);
+  width: 100%;
+  height: 100vh;
+  padding: 200px;
+}
+.container .text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.container p {
+  color: #fff;
+  font-size: 200px;
+  font-weight: 600;
+}
+
+.container p span {
+  color: orange;
+  font-size: 200px;
+  font-weight: 600;
+}
+
+.staking-footer{
+  background-color: rgba(26, 24, 24, 0.459);
+}
+
+
+@media (max-width: 700px){
+  .roadmap .heading{
+    font-size: 2rem;
+  }
+  .roadmap .boxformap pre{
+    font-size: 0.8rem;
+  }
+  .banner .play-button{
+    display: none;
+  }
+
+  .banner p, span{
+    font-size: 5rem;
+  }
+  .video .boxofvideo{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  footer img{
+    max-width: 50%;
+  }
+  .project .texts p{
+    padding: 0;
+    margin: 0;
+    width: 35%;
+    
+  }
+
+  header ul{
+    flex-wrap: wrap;
+  }
+  .project img{
+    margin: 0;
+    width: 100%;
+  }
+  .team-leaders{
+    padding: 0;
+    width: 100%;
+  }
+  .team-leaders .box-team{
+    display: block;
+  }
+}
+
+
